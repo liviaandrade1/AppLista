@@ -17,9 +17,9 @@ public class AdaptadorProduto extends RecyclerView.Adapter<AdaptadorProduto.View
     private Context context;
     private List<Produtos> LstProdutos;
 
-    public AdaptadorProduto(List<Produtos> lstProdutos, Context context) {
-        LstProdutos = lstProdutos;
+    public AdaptadorProduto(Context context, List<Produtos> lstProdutos) {
         this.context = context;
+        LstProdutos = lstProdutos;
     }
 
     @NonNull

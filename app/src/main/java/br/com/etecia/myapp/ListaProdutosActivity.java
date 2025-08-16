@@ -33,17 +33,18 @@ public class ListaProdutosActivity extends AppCompatActivity {
 
         //criando array q vai ter a lista de produtos
         lstProdutos = new ArrayList<>();
-        lstProdutos.add(new Produtos("Pelucia Hello Kitty pequena", R.drawable.img1));
-        lstProdutos.add(new Produtos("Pelucia Capivara de chapéu", R.drawable.img6));
+        lstProdutos.add(new Produtos("Pelucia Hello Kitty P", R.drawable.img1));
+        lstProdutos.add(new Produtos("Pelucia Capivara", R.drawable.img6));
         lstProdutos.add(new Produtos("Pelucia Keroppi Sanrio", R.drawable.img5));
         lstProdutos.add(new Produtos("Pelucia Pou", R.drawable.img7));
         lstProdutos.add(new Produtos("Pelucia Tartaruga", R.drawable.img11));
         lstProdutos.add(new Produtos("Pelucia Porquinho", R.drawable.img13));
         lstProdutos.add(new Produtos("Pelucia Morcego", R.drawable.img10));
-        lstProdutos.add(new Produtos("Pelucia Galinha Pintadinha", R.drawable.img8));
+        lstProdutos.add(new Produtos("Pelucia Galinha", R.drawable.img8));
         lstProdutos.add(new Produtos("Pelucia Sullivan", R.drawable.img9));
-        lstProdutos.add(new Produtos("Pelucia Hello Kitty Grande", R.drawable.img2));
+        lstProdutos.add(new Produtos("Pelucia Hello Kitty G", R.drawable.img2));
         lstProdutos.add(new Produtos("Pelucia Pompompurin", R.drawable.img4));
+        lstProdutos.add(new Produtos("Pelucia Águia", R.drawable.imgaguia));
 
         idListaProdutos = findViewById(R.id.idListaProdutos);
 
@@ -54,9 +55,8 @@ public class ListaProdutosActivity extends AppCompatActivity {
 
         //instanciar o adaptador
         AdaptadorProduto adapter = new AdaptadorProduto(getApplicationContext(), lstProdutos);
-
+        idListaProdutos.hasFixedSize();
         idListaProdutos.setAdapter(adapter);
-
 
 
     }
